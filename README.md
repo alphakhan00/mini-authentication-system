@@ -1,41 +1,75 @@
-00    Mini Authentication System
+# Python Login System
 
-A Python-based authentication system developed as a practical programming project.
+A Python-based command-line login system created as a practical project to practice user registration, authentication logic, file handling, input validation, and activity logging.
 
-01    Overview
+## Overview
 
-This project uses basic login system that allows users to enter their credentials and provides controlled access based on the entered information.A user can create an account delete and account access an account and can chages credentioals. 
+This program allows users to:
 
-02    Features
+- Register an account
+- Log in
+- Log out
+- View activity logs
+- Check the currently logged-in user
+- Exit the program
 
-- Username and password input
-- Credential verification
-- Login attempt handling
-- Input validation
-- Clear success and failure messages
+User information is stored in a local text file, while login and logout activities are recorded in a separate log file.
 
-03    Technologies Used
+## Features
 
-- Python
-- Variables
-- Input/output
-- Conditional statements
-- Loops
-- Dictionaries
+- User registration
+- Username validation
+- Password confirmation
+- Password requirements
+- Duplicate username detection
+- Login authentication
+- Three login attempts
+- Login/logout tracking
+- Activity logging
+- Current-user display
+- File handling
+- Error handling
+
+## Technologies Used
+
+- Python 3
+- `datetime`
+- File handling
 - Functions
+- Loops
+- Conditional statements
 - Exception handling
+- String methods
 
-04 What I Learned
+## How It Works
 
-Through this project, I practiced:
+### Registration
 
-- Working with user input
-- Using dictionaries to store and check information
-- Implementing conditional logic
-- Using loops for repeated login attempts
-- Handling invalid input
-- Designing a simple authentication workflow
+The user provides:
 
-05 Purpose
+1. Username
+2. Password
+3. Password confirmation
 
-This project was developed to strengthen my Python programming skills and understand the basic logic behind authentication systems.
+The program validates the information before storing the account.
+
+### Login
+
+The user enters their username and password.
+
+The program checks the stored information and allows up to three login attempts.
+
+### Logout
+
+The currently logged-in user can log out of the system.
+
+### Activity Logs
+
+The program records registration, login, and logout events with timestamps.
+
+## How to Run
+
+Clone the repository:
+
+```bash
+git clone YOUR_REPOSITORY_LINK
